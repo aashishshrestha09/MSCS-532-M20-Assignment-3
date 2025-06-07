@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "assignment-3"
+version = "0.1.0"
+description = "Assignment 3: Understanding Algorithm Efficiency and Scalability."
+readme = "README.md"
+urls = {homepage = "https://github.com/aashishshrestha09/MSCS-532-M20-Assignment-3"}
+dependencies = [
+    "matplotlib==3.10.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "black==24.3.0",
+  "pyflakes==3.2.0",
+]
