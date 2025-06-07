@@ -1,4 +1,4 @@
-from typing import Any, Optional, List, Tuple
+from typing import Any, Optional
 from universal_hash import UniversalHash
 
 
@@ -11,7 +11,7 @@ class HashTable:
     def __init__(self, initial_capacity: int = 11):
         self.capacity = initial_capacity
         self.size = 0
-        self.buckets: List[List[Tuple[Any, Any]]] = [[] for _ in range(self.capacity)]
+        self.buckets: list[list[tuple[Any, Any]]] = [[] for _ in range(self.capacity)]
         self.hasher = UniversalHash(self.capacity)
 
     def _hash(self, key: Any) -> int:
