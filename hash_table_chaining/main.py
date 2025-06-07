@@ -23,6 +23,5 @@ def main():
     print(f"Load factor after deletion: {ht.load_factor():.3f}")
 
 
-
 if __name__ == "__main__":
     main()
